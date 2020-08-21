@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JustSaveMore Upload Image</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+<style>
+   .btn-xl {
+    padding: 10px 20px;
+    font-size: 30px;
+    border-radius: 50%;
+    width:150px; 
+    height:150px;}
+</style> 
+
+</head>
+  
+
+
+<body class="text-center jumbotron bg-light text-dark">
+
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <h1>Upload Image</h1>
+    </div>    
+    
+    <div class="form-group">
+        <h3>Select image to upload:</h3>
+        <input type="file" name="fileToUpload" id="fileToUpload">
+    </div>
+    <br>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary btn-xl" value="Upload" name="submit">
+    </div>
+</form>
+<br><br>
+<h3>Back to the <a href="index.php">dashboard</a>.</h3>
+</body>
+</html>
+
